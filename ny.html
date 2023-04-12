@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="bg-cover bg-[url('https://images.unsplash.com/photo-1499092346589-b9b6be3e94b2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80')]">
+    <div class="grid grid-cols-1 lg:grid-cols-3">
+      <div class="col-span-1 lg:col-span-3">
+        <div
+          class="mb-20 border-b-2 border-yellow-100 rounded-lg min-h-[200px] col-span-3  bg-pink-100 md:bg-black">
+
+          <p class= "text-black md:text-yellow-200" id="time" > Time </p>
+          <p class="text-black  md:text-yellow-200" id="date"> Date </p>
+
+          <h1
+            class="text-shadow text-5xl sm:pt-15 md:pt-20 md:text-5xl lg:text-9xl text-yellow-50 text-center leading-10 md:leading-10 pt-10 font-medium"
+          >
+            New York
+          </h1>
+        </div>
+      </div>
+
+
+      <div class="py-1 lg:px-20 mt-0 lg:mt-10 ml-10 lg:ml-96 lg:space-x-36 lg:w-72 flex-col lg:flex-row lg:items-center lg:justify-center items-center justify-start md:border-none">
+          
+        <div class="lg:w-96 lg:h-96 flex space-x-2 lg:space-x-24 flex-col md:flex-row lg:flex-row lg:items-start justify-center items-center  lg:ml-4 lg:mt-72 ml-10 mr-10 mt-0 px-1 py-1 lg:px-1 text-center text-stone-900 rounded-2xl" id="current-temp">
+         <div class="lg:py-1 lg:px-1" data-category="day"></div>  
+          <div class="lg:py-1 lg:pr-0 lg:pl-1 md:py-1 md:px-1 md:pr-5 md:pl-5 py-10 px-10 pr-10 pl-10 mr-20 mt-20" data-category="current-temp"></div>
+          <img src=""  class="w-icon">                                           
+          <div class="py-1 px-10" data-category="night"></div>  
+          <div class="py-1 px-10" data-category="day"></div>
+        </div>
+        </div>
+
+      
+
+      <!-- 
+      
+        <div class="py-4 mt-10 flex flex-row items-start justify-start">
+          
+          <div class="w-64 flex flex-column items-center justify-center ml-10 mr-10 mt-72 border-10 border-red-500 px-10 py-10 bg-sky-100/[.8] text-center text-stone-900 rounded-2xl">
+            <span class="py-5 pr-0 pl-5" data-category="day">Tue</span>
+            <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">                                           
+            <span class="py-4 pl-0 pr-1" data-category="night">Night - 25.6&#176;</span>  
+            <span class="py-4 pl-2 pr-5" data-category="day">Day - 35.6&#176;</span>
+        </div>
+
+        <div class="flex flex-column items-center justify-center ml-10 mr-10 mt-72 box-border border-1 border-white-500 border- px-10 py-10  bg-sky-100/[.8] text-center text-stone-800 rounded-2xl">
+          <div class="py-5 pr-0 pl-5" data-category="day">Tue</div>
+          <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">                                           
+          <div class="py-4 pl-0 pr-1" data-category="night">Night - 25.6&#176;</div>  
+          <div class="py-4 pl-2 pr-5" data-category="day">Day - 35.6&#176;</div>
+     </div>
+
+     <div class="flex flex-column items-center justify-center ml-10 mr-10 mt-72 box-border border-1 border-white-500 border- px-10 py-10  bg-sky-100/[.8] text-center text-stone-800 rounded-2xl">
+      <div class="py-5 pr-0 pl-5" data-category="day">Tue</div>
+      <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">                                           
+      <div class="py-4 pl-0 pr-1" data-category="night">Night - 25.6&#176;</div>  
+      <div class="py-4 pl-2 pr-5" data-category="day">Day - 35.6&#176;</div>
+ </div>
+
+
+     
+ <div class="flex flex-column items-center justify-center ml-10 mr-10 mt-72 box-border border-1 border-white-500 border- px-10 py-10  bg-sky-100/[.8] text-center text-stone-800 rounded-2xl">
+  <div class="py-5 pr-0 pl-5" data-category="day">Tue</div>
+  <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">                                           
+  <div class="py-4 pl-0 pr-1" data-category="night">Night - 25.6&#176;</div>  
+  <div class="py-4 pl-2 pr-5" data-category="day">Day - 35.6&#176;</div>
+</div>
+
+    
+
+<div class="flex flex-column items-center justify-center ml-10 mr-10 mt-72 box-border border-1 border-white-500 border- px-10 py-10  bg-sky-100/[.8] text-center text-stone-800 rounded-2xl">
+  <div class="py-5 pr-0 pl-5" data-category="day">Tue</div>
+  <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">                                           
+  <div class="py-4 pl-0 pr-1" data-category="night">Night - 25.6&#176;</div>  
+  <div class="py-4 pl-2 pr-5" data-category="day">Day - 35.6&#176;</div>
+</div>
+
+
+
+
+<div class="flex flex-column items-center justify-center ml-10 mr-10 mt-72 box-border border-1 border-white-500 border- px-10 py-10  bg-sky-100/[.8] text-center text-stone-800 rounded-2xl">
+  <div class="py-5 pr-0 pl-5" data-category="day">Tue</div>
+  <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">                                           
+  <div class="py-4 pl-0 pr-1" data-category="night">Night - 25.6&#176;</div>  
+  <div class="py-4 pl-2 pr-5" data-category="day">Day - 35.6&#176;</div>
+</div>
+
+
+-->
+
+        
+
+        
+         
+
+
+       
+      
+
+      
+      
+   
+      
+    <script src="ny.js"></script>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.1/moment.min.js" integrity="sha512-Dz4zO7p6MrF+VcOD6PUbA08hK1rv0hDv/wGuxSUjImaUYxRyK2gLC6eQWVqyDN9IM1X/kUA8zkykJS/gEVOd3w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+  </body>
+</html>
