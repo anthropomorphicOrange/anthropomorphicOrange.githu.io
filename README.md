@@ -1,1 +1,1 @@
-# anthropomorphicOrange.githu.io
+# anthropomorphicOrange.github.io
