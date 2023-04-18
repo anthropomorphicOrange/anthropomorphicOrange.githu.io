@@ -72,7 +72,7 @@ function showWeatherData (data) {
 
     data.daily.forEach((day, idx) => {
 
-      if(idx < 7){
+      if(idx < 5){
   
         currentTempEl.innerHTML += ` 
 
