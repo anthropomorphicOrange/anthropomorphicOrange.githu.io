@@ -72,24 +72,23 @@ function showWeatherData (data) {
 
     data.daily.forEach((day, idx) => {
 
-      if(idx < 3){
+      if(idx < 7){
   
         currentTempEl.innerHTML += ` 
 
 
        
-        <div>
-        <div class="border-8 border-slate-700 md:flex-col lg:flex-col flex-col items-start justify-start m-24 px-0 py-0 bg-pink-100/[.8] text-center text-stone-700 rounded-2xl" id="current-temp">
-        <div data-category="current-temp" >
-        <div class="py-1 px-1" data-category="day">${window.moment(day.dt * 1000).format('ddd')}</div>
-       <div class="pl-10 py-5"> <img src="https://openweathermap.org/img/wn/${day.weather[0].icon}.png"  alt="weather icon" class="w-icon"> </div>                                          
-        <div class="py-1 px-10 md:py-10 md:px-10 lg:py-10 lg:px-10" data-category="night">Night: ${day.temp.night}&#176;</div>  
-        <div class="py-1 px-10" data-category="day">Day: ${day.temp.day}&#176;</div>
-    </div>
-    </div>
-    </div>
-    
-         
+        <div class="lg:space-x-24 space-y-12 md:flex-row lg:flex-row flex-col items-center justify-center ml-1 mr-1 mt-5 border-2 box border-slate-500 px-0 py-0 bg-pink-100/[.8] text-center text-stone-700 rounded-2xl" id="current-temp">
+            <div data-category="current-temp" >
+            <div class="py-1 px-1" data-category="day">${window.moment(day.dt * 1000).format('ddd')}</div>
+           <div class="px-10 py-5 "> <img src="https://openweathermap.org/img/wn/${day.weather[0].icon}.png"  alt="weather icon" class="w-icon"> </div>                                          
+            <div class="py-1 px-10" data-category="night">Night: ${day.temp.night}&#176;</div>  
+            <div class="py-1 px-10" data-category="day">Day: ${day.temp.day}&#176;</div>
+        </div>
+        </div>
+        
+       
+        
         
         
        
